@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/calendar.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!--TERAPEUTAS BEIBI. TERAPEUTAS APP-->
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-right panel-reveal">
+        <div class="content-block">
+            <p>:D</p>
+        </div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navito">
+                <a href="index.html" class="fas fa-home" style="color=white; float:left;"></a>
+                Temakoa
+                <a href="#" class="link icon-only open-panel" style="color:white; float:right;"><i class="fas fa-bell"></i></a>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="content-block">
+                            <div class="card">
+
+                                <div id="Datos">
+
+                                    <div class="leftIcon">
+
+                                        <label style="margin-right:10px;" class="fas fa-user-tie fa-5x"></label>
+
+                                    </div>
+
+                                    <div style="display:block;">
+
+                                        <input type="text" class="dato" id="NombreYApellido" value="" placeholder="Nombre y apellido" disabled />
+                                        <br/>
+                                        <br/>
+                                        <input type="text" class="dato" id="CodigoPostal" value="" placeholder="CódigoPostal" disabled />
+                                        <br/>
+                                        <br/>
+                                        <label>Cédula profesional</label>
+                                        <br/>
+                                        <br/>
+
+                                        <div>
+                                            <button id="Editarbtn" onclick="Editar()" <label class="fas fa-pen-square fa-3x" style=" color:#bc034a; background:none; border:none;"></label></button>
+
+                                            <button id="Guardarbtn" class="Guardarbtn" style="background-color:#bc034a; display:none;color:white; padding-left:5px; padding-right:5px; border:none;" onclick="Guardar()">Guardar</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <a href="about.html" class="Seccion"> Mis Clientes </a>
+
+
+                                <div id="agenda">
+
+                                    <div style="background-color:#ddc5ce; border-radius:20px;">
+
+                                        <div style="border-radius:20px; width:auto; margin-bottom:10px; background-color:#963459; padding-left:10px; padding-right:10px; padding-bottom:7px; padding-top:7px; color:white;">
+                                            <label style="font-size:20px; font-weight:600;">Citas del mes </label>
+                                        </div>
+
+                                        <div>
+                                            <!--DÍAS-->
+                                            <!---->
+                                            <div style="margin-left:10px; display:inline-block;">
+
+
+                                                <label style="color:black;">Establecer fechas</label>
+                                                <br />
+
+                                                <input type="date" class="time"  name="date_val" id="date_val" onclick="this.value=''" />
+                                            </div>
+                                            <!--HORAS-->
+                                            <!---->
+                                            <div style="margin-left:10px; display:inline-block;">
+
+
+                                                <label style="color:black;">Establecer horas</label>
+                                                <br />
+
+                                                <input type="time" class="time" name="date_val" id="hora" />
+
+
+                                            </div>
+                                            <div style="margin-left 10px; display:inline-block;">
+                                                <label style="color:black;">Cliente</label>
+                                                <br />
+                                                <select id="ClientesName" class="time" ">
+                                                    <option value="Héctor">Héctor</option>
+                                                    <option value="Joel">Joel</option>
+                                                    <option value="Cristy">Cristy</option>
+                                                </select>
+
+                                            </div> 
+                                            <button name="cr" id="cr" onclick="agregaFecha()">
+                                                <i class="fas fa-plus fa-2x" style="padding-bottom:5px; padding-top:5px;"></i>
+                                            </button>
+
+                                        </div>
+
+                                        <div class="contenedor">
+
+                                            <p id="div_salida">
+
+                                            </p>
+
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Toolbar-->
+            <div class="toolbar">
+                <div class="toolbar-inner">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/datosclientes.js"></script>
+
+
+</body>
+
+</html>

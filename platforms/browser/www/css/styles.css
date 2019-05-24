@@ -1,0 +1,170 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+/*THERAPISTS*/
+.time{
+    border-radius:20px; width:auto; margin-bottom:10px; background-color:#963459; padding-left:10px; padding-right:10px; padding-bottom:7px; padding-top:7px; color:white;
+}
+
+a{
+    color:white;
+ 
+}
+
+.cliente {
+    display: flow-root;
+    border-bottom-color: #a0a0a0;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+#date_val {
+    font-size: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+#cr {
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    background-color: lightskyblue;
+    color: black;
+    font-size: 15px;
+    border:none;
+}
+
+#down{
+    color:black;
+    float:right;
+    padding-left:20px;
+    padding-right:20px;
+    box-sizing:content-box;
+}
+
+.statusbar-overlay {
+    background: #000000;
+}
+
+#div_salida > li {
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    background-color: #f7f7f7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-color: #dbdbdb;
+    transition: 0.2s;
+    user-select: none;
+    box-sizing:content-box;
+    display:flow-root;
+}
+
+.bodyCard {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    font-size: 15px;
+    border-color: #ededed;
+    border-width: 8px;
+    padding-left: 10px;
+    padding-right: 30px;
+    height: inherit;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.card {
+    padding-left: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    font-size: 15px;
+    border-color: #ededed;
+    border-width: 8px;
+    padding-left: 10px;
+    padding-right: 30px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    float: center;
+    box-sizing:content-box;
+}
+
+.Contenedor {
+    background-color: none;
+    width: auto;
+    margin-left: 5px;
+    vertical-align: central;
+    padding-left: 30px;
+    border: 5px;
+    border-color: grey;
+    position: fixed;
+}
+
+.Seccion {
+    border:none;
+    border-width: 1px;
+    font-size: 18px;
+    background-color: dimgrey;
+    color:white;
+    font-weight:8px;
+    border-radius: 5px;
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:4px;
+    padding-bottom:4px;
+    float:right;
+    margin-right:0px;
+    margin-top:0px;
+}
+
+.leftIcon {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    align-items: left;
+    float: left;
+    padding-bottom: 10px;
+    height: auto;
+}
+.navito {
+    text-align: center;
+    font-size: 28px;
+    background-color: #96013a;
+    color: white;
+    height: auto;
+    border: 5px;
+    border-color: dimgrey;
+    position: sticky;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+  
+}
