@@ -16,15 +16,6 @@
     <!-- Status bar overlay for full screen mode (PhoneGap) -->
     <div class="statusbar-overlay"></div>
 
-    <!-- Panels overlay-->
-    <div class="panel-overlay"></div>
-    <!-- Left panel with reveal effect-->
-    <div class="panel panel-right panel-reveal">
-        <div class="content-block">
-            <p>:D</p>
-        </div>
-    </div>
-
     <!-- Views -->
     <div class="views">
         <!-- Your main view, should have "view-main" class -->
@@ -33,7 +24,6 @@
             <div class="navito">
                 <a href="index.html" class="fas fa-home" style="color=white; float:left;"></a>
                 Temakoa
-                <a href="#" class="link icon-only open-panel" style="color:white; float:right;"><i class="fas fa-bell"></i></a>
             </div>
             <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
             <div class="pages navbar-through toolbar-through">
@@ -109,16 +99,7 @@
 
 
                                             </div>
-                                            <div style="margin-left 10px; display:inline-block;">
-                                                <label style="color:black;">Cliente</label>
-                                                <br />
-                                                <select id="ClientesName" class="time" ">
-                                                    <option value="Héctor">Héctor</option>
-                                                    <option value="Joel">Joel</option>
-                                                    <option value="Cristy">Cristy</option>
-                                                </select>
-
-                                            </div> 
+                                          
                                             <button name="cr" id="cr" onclick="agregaFecha()">
                                                 <i class="fas fa-plus fa-2x" style="padding-bottom:5px; padding-top:5px;"></i>
                                             </button>

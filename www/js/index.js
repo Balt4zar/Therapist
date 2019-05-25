@@ -10,10 +10,9 @@ var horas = new Array();
 function agregaFecha() {
 
     var fecha = $$("#date_val").val();
-    var cliente = $$("#ClientesName").val();
     var hora = $$("#hora").val();
 
-    if (fecha == "" || hora == "" || cliente == "") {
+    if (fecha == "" || hora == "") {
         alert("¡Esto no puede ir vacío!");
     } else {
 
@@ -25,7 +24,7 @@ function agregaFecha() {
         $$("#div_salida").html("");
 
         for (var i = 0; i < fechas.length; i++) {
-            $$("#div_salida").append("<li style='color:black; font-size:20px;' id='" + [i] + "'>" + fechas[i] + "        " + horas[i] + "      " + cliente + "<i type='button' class='fas fa-times' style='color:red; float:right;' name='eliminar' id='" + [i] + "'  onClick='eliminarFechas(this.id)'></i><input type='time' id='hora' style='display:none;'/> </li>");
+            $$("#div_salida").append("<li style='color:black; font-size:20px;' id='" + [i] + "'>" + fechas[i] + "        " + horas[i] + "      " + "<i type='button' class='fas fa-times' style='color:red; float:right;' name='eliminar' id='" + [i] + "'  onClick='eliminarFechas(this.id)'></i><input type='time' id='hora' style='display:none;'/> </li>");
         }
         $$("#date_val").val("");
         $$("#hora").val("");
@@ -44,7 +43,7 @@ function eliminarFechas(X) {
     $$("#div_salida").html("");
 
     for (var i = 0; i < fechas.length; i++) {
-        $$("#div_salida").append("<li style='color:black; font-size:20px;' id='" + [i] + "'>" + fechas[i] + "         " + horas[i] + "      " + cliente + "<i class='fas fa-times' style='color:red; float:right;' name='eliminar' id='" + [i] + "' onClick='eliminarFechas(this.id)'/></i><input type='time' id='hora' style='display:none;'/> </li>");
+        $$("#div_salida").append("<li style='color:black; font-size:20px;' id='" + [i] + "'>" + fechas[i] + "         " + horas[i] + "      " + "<i class='fas fa-times' style='color:red; float:right;' name='eliminar' id='" + [i] + "' onClick='eliminarFechas(this.id)'/></i><input type='time' id='hora' style='display:none;'/> </li>");
     }
 }
 
